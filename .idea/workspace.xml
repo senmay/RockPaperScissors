@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77bc97b8-8fda-4f60-839e-caae37034666" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -11,9 +10,10 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Interface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Messages.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/RPSGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/RPSGame.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/RpsRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/RpsRunner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Messages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Messages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Messages.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/RPSGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RPSGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/RpsRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RpsRunner.java" afterDir="false" />
     </list>
@@ -95,6 +95,10 @@
       <workItem from="1588367069772" duration="724000" />
       <workItem from="1588438379623" duration="4352000" />
       <workItem from="1588501442340" duration="7770000" />
+      <workItem from="1588613205888" duration="4220000" />
+      <workItem from="1588708271995" duration="1012000" />
+      <workItem from="1589137711023" duration="1749000" />
+      <workItem from="1589642435704" duration="12627000" />
     </task>
     <servers />
   </component>
