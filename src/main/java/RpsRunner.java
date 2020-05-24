@@ -6,22 +6,24 @@ public class RpsRunner {
 
         while (! gameFinished) {
             RPSGame theGame = new RPSGame();
+            InputCheck inputCheck = new InputCheck();
             gameFinished = false;
             isNewGame = false;
-            theGame.readingName();
-            theGame.readingNumberOfRounds();
-            for (int i = 0; i < theGame.howManyTimes; i++) {
-                theGame.choosingOption();
-                if (isNewGame) {
-                    i = theGame.howManyTimes;
-                    break;
-                }
-                if (gameFinished) break;
-                theGame.resolvingGame();
-                    if (i == theGame.howManyTimes-1) {
-                        theGame.quitConfirmation();
-                    }
-            }
+            inputCheck.readingName();
+            inputCheck.readingNumberOfRounds();
+            inputCheck.checkIfValueIsCorrect();
+//            for (int i = 0; i < theGame.howManyTimes; i++) {
+//                theGame.choosingOption();
+//                if (isNewGame) {
+//                    i = theGame.howManyTimes;
+//                    break;
+//                }
+//                if (gameFinished) break;
+//                theGame.resolvingGame();
+//                    if (i == theGame.howManyTimes-1) {
+//                        theGame.quitConfirmation();
+//                    }
+//            }
         }
     }
 }

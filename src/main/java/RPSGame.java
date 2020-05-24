@@ -1,43 +1,15 @@
-
-import java.util.*;
-import java.util.regex.Pattern;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Random;
 
 class RPSGame {
-    private Scanner sc = new Scanner(System.in);
+    InputCheck input = new InputCheck();
     int howManyTimes;
     private Possibilites player1Choice;
     private int countPlayer1Winds = 0;
     private int countPlayer2Winds = 0;
     boolean isNewGame = false;
-
-    private Pattern checkIfWord = Pattern.compile("[a-zA-Z]+");
-
-    void readingName() {
-        boolean isNameCorrect = false;
-        while (! isNameCorrect) {
-            System.out.println("Enter your name: (It must have less than 10 characters and contain only letters)");
-            String username = sc.nextLine();
-            if (checkIfWord.matcher(username).matches() && username.length() < 10) {
-                isNameCorrect = true;
-            }
-        }
-    }
-
-    void readingNumberOfRounds() {
-        do {
-            System.out.println("How many rounds do you want to play?: (More than 0, less than 10)");
-            while (! sc.hasNextInt()) {
-                System.out.println("That's not a number");
-                sc.next();
-            }
-            howManyTimes = sc.nextInt();
-        } while (howManyTimes < 0 || howManyTimes > 10);
-        System.out.println("Thanks!");
-    }
-
-    private String readInputOption() {
-        return sc.next();
-    }
 
     void choosingOption() {
         boolean isSignCorrect = false;
@@ -89,7 +61,7 @@ class RPSGame {
         }
     }
 
-    public Possibilites randomizeOpoonentChoice() {
+    public Possibilites randomizeOpoonentChoice() { //todo wyjebac to w pizdu do innej klasy
         List<Possibilites> values = new ArrayList<>(Arrays.asList(Possibilites.values()));
         final int size = values.size();
         final Random random = new Random();
@@ -99,46 +71,22 @@ class RPSGame {
     void resolvingGame() {
         Possibilites player2Choice = randomizeOpoonentChoice();
 
-        if (player1Choice == player2Choice) {
+        if (player1Choice == player2Choice) { //todo set user HopwManyRTounds to correct values
             countPlayer1Winds++;
             countPlayer2Winds++;
             System.out.println("Player 1 : " + player1Choice + " / Player 2 : " + player2Choice + "\n DRAW");
             System.out.println("RESULT : " + countPlayer1Winds + " " + countPlayer2Winds + "\n");
         }
 
-        if (player1Choice == Possibilites.SCISSORS && player2Choice == Possibilites.PAPER) {
+        if ((player1Choice == Possibilites.SCISSORS && player2Choice == Possibilites.PAPER) || (player1Choice == Possibilites.ROCK && player2Choice == Possibilites.SCISSORS) || (player1Choice == Possibilites.PAPER && player2Choice == Possibilites.ROCK))  {
             countPlayer1Winds++;
             System.out.println("Player 1 : " + player1Choice + " / Player 2 : " + player2Choice + "\n Player 2 wins\n");
             System.out.println("RESULT : " + countPlayer1Winds + " " + countPlayer2Winds + "\n");
         }
 
-        if (player1Choice == Possibilites.PAPER && player2Choice == Possibilites.SCISSORS) {
+        if ((player1Choice == Possibilites.PAPER && player2Choice == Possibilites.SCISSORS) || (player1Choice == Possibilites.SCISSORS && player2Choice == Possibilites.ROCK) || (player1Choice == Possibilites.ROCK && player2Choice == Possibilites.PAPER)) {
             countPlayer2Winds++;
             System.out.println("Player 1 : " + player1Choice + " / Player 2 : " + player2Choice + "\n Player 1 wins\n");
-            System.out.println("RESULT : " + countPlayer1Winds + " " + countPlayer2Winds + "\n");
-        }
-
-        if (player1Choice == Possibilites.ROCK && player2Choice == Possibilites.SCISSORS) {
-            countPlayer1Winds++;
-            System.out.println("Player 1 : " + player1Choice + " / Player 2 : " + player2Choice + "\n Player 2 wins\n");
-            System.out.println("RESULT : " + countPlayer1Winds + " " + countPlayer2Winds + "\n");
-        }
-
-        if (player1Choice == Possibilites.SCISSORS && player2Choice == Possibilites.ROCK) {
-            countPlayer2Winds++;
-            System.out.println("Player 1 : " + player1Choice + " / Player 2 : " + player2Choice + "\n Player 1 wins\n");
-            System.out.println("RESULT : " + countPlayer1Winds + " " + countPlayer2Winds + "\n");
-        }
-
-        if (player1Choice == Possibilites.PAPER && player2Choice == Possibilites.ROCK) {
-            countPlayer1Winds++;
-            System.out.println("Player 1 : " + player1Choice + " / Player 2 : " + player2Choice + "\n Player 2 wins\n");
-            System.out.println("RESULT : " + countPlayer1Winds + " " + countPlayer2Winds + "\n");
-        }
-
-        if (player1Choice == Possibilites.ROCK && player2Choice == Possibilites.PAPER) {
-            countPlayer2Winds++;
-            System.out.println("Player 1 : " + player1Choice + " / Player 2 : " + player2Choice + "\n Player 2 wins\n");
             System.out.println("RESULT : " + countPlayer1Winds + " " + countPlayer2Winds + "\n");
         }
     }
