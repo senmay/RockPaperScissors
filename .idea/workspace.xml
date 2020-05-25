@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77bc97b8-8fda-4f60-839e-caae37034666" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/InputCheck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Sign.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -13,10 +10,14 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/InputCheck.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/InputCheck.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/RPSGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/RPSGame.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/RpsRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/RpsRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/InputCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InputCheck.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/RPSGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RPSGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/RpsRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RpsRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/User.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -108,7 +109,8 @@
       <workItem from="1589729279015" duration="25000" />
       <workItem from="1589729376446" duration="902000" />
       <workItem from="1589743139631" duration="625000" />
-      <workItem from="1590340908350" duration="6957000" />
+      <workItem from="1590340908350" duration="7500000" />
+      <workItem from="1590418919573" duration="6014000" />
     </task>
     <servers />
   </component>

@@ -1,13 +1,11 @@
-import java.util.Scanner;
+import java.util.*;
 import java.util.regex.Pattern;
 
 public class InputCheck {
-    private User user = new User();
+    public User user = new User();
+    public Sign sign = new Sign();
     private Scanner sc = new Scanner(System.in);
-    private Sign sign = new Sign();
     int howManyTimes;
-
-    String ValueForChoosingOption;
 
     void readingName() {
         Pattern checkIfWord = Pattern.compile("[a-zA-Z]+");
@@ -18,6 +16,7 @@ public class InputCheck {
             user.setUsername(sc.nextLine());
         }
     }
+
     void readingNumberOfRounds() {
         do {
             System.out.println("How many rounds do you want to play?: (More than 0, less than 10)");
@@ -32,8 +31,6 @@ public class InputCheck {
 
     void checkIfValueIsCorrect() {
 
-        boolean isSignCorrect = false;
-        boolean isQuitConfirmed = false;
         System.out.println("Choose option: ");
         System.out.println("Press 1 for picking ROCK");
         System.out.println("Press 2 for picking PAPER");
@@ -45,6 +42,25 @@ public class InputCheck {
             System.out.println("Please enter correct option: ");
             sign.setSign(sc.next());
         }
+        if (sign.getSign().equals("n")) {
+            System.out.println("Do you want to start new game? (y for yes)");
+            if (sc.next().equals("y")) {
+                RpsRunner.isNewGame = true;
+            }
+        }
+        if (sign.getSign().equals("x")) {
+            System.out.println("Do you want to quit game? (y for quit)");
+            if (sc.next().equals("y")) {
+                RpsRunner.gameFinished = true;
+            }
+        }
+    }
+
+    public Possibilites randomizeOpoonentChoice() {
+        List<Possibilites> values = new ArrayList<>(Arrays.asList(Possibilites.values()));
+        final int size = values.size();
+        final Random random = new Random();
+        return values.get(random.nextInt(size));
     }
 }
 
